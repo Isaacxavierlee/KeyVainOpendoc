@@ -20,4 +20,5 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
   document.getElementById("emailInput").value = "";
   document.getElementById("subjectInput").value = "";
   document.getElementById("messageInput").value = "";
+  
 });
