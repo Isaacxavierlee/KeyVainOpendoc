@@ -20,5 +20,15 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
   document.getElementById("emailInput").value = "";
   document.getElementById("subjectInput").value = "";
   document.getElementById("messageInput").value = "";
-  
+
+  var downloadBtn = document.getElementById("downloadBtn");
+  downloadBtn.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    var fileUrl = "img/Isaac Xavier Recommendation Letters.pdf";
+    var link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Isaac Xavier Recommendation Letters.pdf";
+    link.click();
+  });
 });
